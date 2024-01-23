@@ -1,0 +1,684 @@
+$primary-color: #ffffff;
+$secondary-color: #2f2f2f;
+$bright-color: #fd562a;
+$dark-color: #222222;
+$light-color: #f6f5f5;
+.Name {
+  text-align: center;
+  font-weight: bolder;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  backdrop-filter: blur(16px);
+
+  .modal {
+    background: #fff;
+    padding: 20px;
+    max-width: 80%;
+    width: 400px;
+    max-height: 80%;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    img {
+      max-width: 100%;
+    }
+    .close-button {
+      cursor: pointer;
+      background: white;
+      border: 1px solid white;
+      font-size: 16px;
+      color: black;
+      box-shadow: 1px 1px 6px -2px black;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      margin-bottom: 10px;
+      margin-top: 50px;
+    }
+
+    p {
+      margin: 8px 0;
+      font-weight: bold;
+    }
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
+body {
+  padding: 2rem;
+  margin: 0;
+}
+.heroarti {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.countryfilter {
+  .countryfilter1 {
+    text-align: center;
+    justify-content: center;
+    background-color: $primary-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    input {
+      min-width: 300px;
+      margin-bottom: 1rem;
+    }
+    ::placeholder {
+      font-style: italic;
+      text-align: center;
+      opacity: 0.4;
+    }
+  }
+  .countryregion {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: row;
+    gap: 10px;
+    button {
+      background-color: $primary-color;
+      // border: 1px solid $s;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+.Country {
+  background-color: $primary-color;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+  img {
+    max-width: 100%;
+  }
+  .Country-content-2 {
+    padding: 1rem;
+    h2 {
+      max-width: 200px;
+    }
+    p {
+      max-width: 200px;
+    }
+  }
+  button {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.Country-list {
+  padding-top: 2rem;
+}
+@media screen and (max-width: 320px) {
+  .countryfilter {
+    .countryfilter1 {
+      text-align: center;
+      justify-content: center;
+      background-color: $primary-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 1rem 0.1;
+      input {
+        min-width: 200px;
+        max-width: 300px;
+        margin-bottom: 1rem;
+      }
+      ::placeholder {
+        font-style: italic;
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+    .countryregion {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: row;
+      gap: 2px;
+      button {
+        background-color: $primary-color;
+        // border: 1px solid $s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+@media (min-width: 321px) and (max-width: 399px) {
+  .countryfilter {
+    .countryfilter1 {
+      text-align: center;
+      justify-content: center;
+      background-color: $primary-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 1rem 0.1;
+      input {
+        min-width: 200px;
+        max-width: 300px;
+        margin-bottom: 1rem;
+      }
+      ::placeholder {
+        font-style: italic;
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+    .countryregion {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: row;
+      gap: 10px;
+      button {
+        background-color: $primary-color;
+        // border: 1px solid $s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+@media (min-width: 400px) and (max-width: 499px) {
+}
+@media screen and (min-width: 600px) {
+  .modal-overlay {
+    .modal {
+      background: #fff;
+      padding: 20px;
+      max-width: 80%;
+      width: 400px;
+      max-height: 80%;
+      overflow: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+      img {
+        max-width: 100%;
+      }
+      .close-button {
+        cursor: pointer;
+        background: white;
+        border: 1px solid white;
+        font-size: 16px;
+        color: black;
+        box-shadow: 1px 1px 6px -2px black;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      img {
+        margin-bottom: 10px;
+        margin-top: 50px;
+      }
+
+      p {
+        margin: 8px 0;
+        font-weight: bold;
+      }
+      span {
+        font-weight: 100;
+      }
+    }
+  }
+
+  body {
+    padding: 2rem;
+    margin: 0;
+  }
+  .heroarti {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .countryfilter {
+    .countryfilter1 {
+      text-align: center;
+      justify-content: center;
+      background-color: $primary-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      input {
+        min-width: 300px;
+        margin-bottom: 1rem;
+      }
+      ::placeholder {
+        font-style: italic;
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+    .countryregion {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: row;
+      gap: 10px;
+      button {
+        background-color: $primary-color;
+        // border: 1px solid $s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .Country {
+    background-color: $primary-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    img {
+      max-width: 100%;
+    }
+    .Country-content-2 {
+      padding: 1rem;
+      h2 {
+        max-width: 200px;
+      }
+      p {
+        max-width: 200px;
+      }
+    }
+    button {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .Country-list {
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .modal-overlay {
+    .modal {
+      background: #fff;
+      padding: 20px;
+      max-width: 80%;
+      width: 500px;
+      max-height: 80%;
+      overflow: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+      img {
+        max-width: 100%;
+      }
+      .close-button {
+        cursor: pointer;
+        background: white;
+        border: 1px solid white;
+        font-size: 16px;
+        color: black;
+        box-shadow: 1px 1px 6px -2px black;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      img {
+        margin-bottom: 10px;
+        margin-top: 50px;
+      }
+
+      p {
+        margin: 8px 0;
+        font-weight: bold;
+      }
+      span {
+        font-weight: 100;
+      }
+    }
+  }
+
+  body {
+    padding: 2rem 2rem;
+    margin: 0;
+  }
+  .heroarti {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .countryfilter {
+    .countryfilter1 {
+      text-align: center;
+      justify-content: center;
+      background-color: $primary-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      input {
+        min-width: 300px;
+        margin-bottom: 1rem;
+      }
+      ::placeholder {
+        font-style: italic;
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+    .countryregion {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: row;
+      gap: 10px;
+      button {
+        background-color: $primary-color;
+        // border: 1px solid $s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .Country {
+    background-color: $primary-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    max-width: calc(50% - 20px);
+    min-height: 300px;
+    flex-grow: 1;
+    img {
+      max-width: 100%;
+    }
+    .Country-content-2 {
+      padding: 1rem;
+      h2 {
+        max-width: 200px;
+      }
+      p {
+        max-width: 200px;
+      }
+    }
+    button {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .Country-list {
+    padding-top: 2rem;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 800px) {
+}
+@media screen and (min-width: 900px) {
+  .modal-overlay {
+    .modal {
+      background: #fff;
+      padding: 20px;
+      max-width: 80%;
+      width: 500px;
+      max-height: 80%;
+      overflow: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+      img {
+        max-width: 100%;
+      }
+      .close-button {
+        cursor: pointer;
+        background: white;
+        border: 1px solid white;
+        font-size: 16px;
+        color: black;
+        box-shadow: 1px 1px 6px -2px black;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      img {
+        margin-bottom: 10px;
+        margin-top: 50px;
+      }
+
+      p {
+        margin: 8px 0;
+        font-weight: bold;
+      }
+      span {
+        font-weight: 100;
+      }
+    }
+  }
+
+  body {
+    padding: 2rem 3rem;
+    margin: 0;
+  }
+  .heroarti {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .countryfilter {
+    .countryfilter1 {
+      text-align: center;
+      justify-content: center;
+      background-color: $primary-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      input {
+        min-width: 300px;
+        margin-bottom: 1rem;
+      }
+      ::placeholder {
+        font-style: italic;
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+    .countryregion {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: row;
+      gap: 10px;
+      button {
+        background-color: $primary-color;
+        // border: 1px solid $s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .Country {
+    background-color: $primary-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    max-width: calc(33.33% - 20px);
+    min-height: 300px;
+    flex-grow: 1;
+    img {
+      max-width: 100%;
+      min-height: 200px;
+    }
+    .Country-content-2 {
+      padding: 1rem;
+      h2 {
+        max-width: 200px;
+      }
+      p {
+        max-width: 200px;
+      }
+    }
+    button {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .Country-list {
+    padding-top: 2rem;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+}
+@media screen and (min-width: 1100px) {
+}
+@media screen and (min-width: 1200px) {
+  .modal-overlay {
+    .modal {
+      background: #fff;
+      padding: 20px;
+      max-width: 80%;
+      width: 500px;
+      max-height: 80%;
+      overflow: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+      img {
+        max-width: 100%;
+        max-height: 300px;
+      }
+      .close-button {
+        cursor: pointer;
+        background: white;
+        border: 1px solid white;
+        font-size: 16px;
+        color: black;
+        box-shadow: 1px 1px 6px -2px black;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      img {
+        margin-bottom: 10px;
+        margin-top: 50px;
+      }
+
+      p {
+        margin: 8px 0;
+        font-weight: bold;
+      }
+      span {
+        font-weight: 100;
+      }
+    }
+  }
+
+  body {
+    padding: 2rem 10rem;
+    margin: 0;
+  }
+  .heroarti {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .countryfilter {
+    .countryfilter1 {
+      text-align: center;
+      justify-content: center;
+      background-color: $primary-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      input {
+        min-width: 300px;
+        margin-bottom: 1rem;
+      }
+      ::placeholder {
+        font-style: italic;
+        text-align: center;
+        opacity: 0.4;
+      }
+    }
+    .countryregion {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      // flex-direction: row;
+      gap: 10px;
+      button {
+        background-color: $primary-color;
+        // border: 1px solid $s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .Country {
+    background-color: $primary-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    max-width: calc(25% - 20px);
+    min-height: 300px;
+    flex-grow: 1;
+    img {
+      max-width: 100%;
+      min-height: 200px;
+    }
+    .Country-content-2 {
+      padding: 1rem;
+      h2 {
+        max-width: 200px;
+      }
+      p {
+        max-width: 200px;
+      }
+    }
+    button {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .Country-list {
+    padding-top: 2rem;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+  }
+}
+@media screen and (min-width: 1300px) {
+}
+@media screen and (min-width: 1400px) {
+}
